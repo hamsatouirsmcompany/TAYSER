@@ -91,6 +91,11 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; margin: 0 0 .5rem;
   background: var(--gold); color: #241a06 !important; padding: .55rem 1.3rem;
   border-radius: 999px; font-weight: 700; border-bottom: none !important;
 }
+.nav__back {
+  border: 1.5px solid var(--gold-deep); color: var(--gold-deep) !important;
+  padding: .5rem 1.2rem; border-radius: 999px; font-weight: 700;
+}
+.nav__back:hover { background: var(--gold-deep); color: #fff !important; }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .4rem; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--ink); display: block; }
 
@@ -254,6 +259,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; margin: 0 0 .5rem;
       <a href="#mostawayat">الإقامة</a>
       <a href="#mazaya">المميزات</a>
       <a href="#shorot">الشروط</a>
+      <a href="https://amrkhaledmohamedeng-create.github.io/hamsa-torism/" class="nav__back">الرجوع للصفحة الرسمية</a>
       <a href="#tasgeel" class="nav__cta">سجّل الآن</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="القائمة">
@@ -522,7 +528,11 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; margin: 0 0 .5rem;
       <p><a href="https://wa.me/20000000000" target="_blank" rel="noopener">تواصل عبر واتساب</a></p>
     </div>
   </div>
-  <p class="site-footer__copy">© <span id="year"></span> عمرة التيسير. جميع الحقوق محفوظة.</p>
+  <p class="site-footer__copy">
+    © <span id="year"></span> عمرة التيسير. جميع الحقوق محفوظة.
+    &nbsp;|&nbsp;
+    <a href="https://amrkhaledmohamedeng-create.github.io/hamsa-torism/" style="color:var(--gold-pale); font-weight:700;">الرجوع للصفحة الرسمية</a>
+  </p>
 </footer>
 
 <script>
@@ -530,7 +540,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; margin: 0 0 .5rem;
 // ضع هنا رابط الـ Web App الخاص بـ Google Apps Script بعد نشره
 // شرح كامل لطريقة الحصول على الرابط موجود في ملف README.md
 // ============================================================
-const SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyYaYSNoMVLJAxPaEF5-YxAJquw7U9R5mh5LyAjt6ex4eFzFPc6dkbw7SuLViKvclEZ/exec";
+const SHEET_WEBAPP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
